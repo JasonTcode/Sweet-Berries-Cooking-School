@@ -25,6 +25,8 @@ p{
     color: #646464;
 }
 
+/* ****HEADER**** */
+
 .header{
     grid-column: 1/-1;
     display: flex;
@@ -53,6 +55,8 @@ p{
     padding: 10px 15px;
     border-radius: 50px;
 }
+
+/* ****BANNER-CONTAINER**** */
 
 .banner-container{
 grid-column: 1/-1;
@@ -84,7 +88,7 @@ padding: 30px;
     border-radius: 20px;
 }
 
-
+/* ****CARD-CONTAINER**** */
 
 .card-container{
     grid-column: 1/-1;
@@ -100,13 +104,9 @@ padding: 30px;
     padding: 10px 20px 30px 10px;
 }
 
-.card-1{
+
+.card-orange{
     background-color: #FEBD2F;
-    border-radius: 15px;
-    padding: 20px;
-    width: 70%;
-    margin-top: 50px;
-    margin-left: 15%;
 }
 
 .card-1 h2{
@@ -114,17 +114,37 @@ padding: 30px;
     font-weight: 500;
 }
 
-.icon{
+.card-box, .card-orange{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    width: 75%;
+    height: 90%;
     position: relative;
+    margin: auto;
+    padding: 30px;
+}
+
+.card-box{
+    background-color: #ffffff;
+}
+
+.card-box button{
+    padding: 12px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100px;
+}
+.icon{
+    position: absolute;
     height: 50px;
-    left: 300px;
-    top: 30px;
+    right: 20px;
+    top: -30px;
     z-index: 1;
 }
 
-.card-2 p, h3{
- padding: 20px 40px 10px 40px;
-}
 
 .card-2{
     background-color: #ffffff;
@@ -147,6 +167,8 @@ padding: 30px;
     margin-left: -150px;
 }
 
+/* ****FOOTER**** */
+
 .footer{
     background-color: #FEBD2F;
     grid-column: 1/-1;
@@ -163,7 +185,7 @@ padding: 30px;
     background-color: #F5F3EF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     
     .banner-container{
         grid-template-columns: 1fr;
