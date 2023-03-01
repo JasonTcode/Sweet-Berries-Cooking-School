@@ -100,8 +100,7 @@ padding: 30px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    margin-bottom: 70px;  
-    align-items: right; 
+    margin-bottom: 70px;
 }
 
 .h2-words{
