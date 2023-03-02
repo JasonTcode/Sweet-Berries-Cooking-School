@@ -56,6 +56,42 @@ p{
     border-radius: 50px;
 }
 
+/* ****Hamburger Menu**** */
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .hamburger .bar, .hamburger:after, .hamburger:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+
+  .hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -9px);
+  }
+
+  .hamburger.is-active .bar{
+    opacity: 0;
+  }
+
 /* ****BANNER-CONTAINER**** */
 
 .banner-container{
@@ -186,6 +222,8 @@ padding: 30px;
     background-color: #F5F3EF;
 }
 
+/* ****Queries**** */
+
 @media (max-width: 1000px) {
     
     .banner-container{
@@ -208,9 +246,30 @@ padding: 30px;
     }
 
 }
+
+@media (min-width: 469px){
+    .header button{
+        display: none;
+    }
+}
+
+
     @media (max-width: 468px) {
         .card-container{
           grid-template-columns: 1fr;
         }
-        
+        .left-nav{
+            display: none;
+        }
+
+        nav{
+            flex-direction: column;
+            padding-left: 22%;
+        }
+
+        .right-nav{
+            display: none;
+        }
       }
+
+      
