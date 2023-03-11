@@ -5,6 +5,7 @@
     
 }
 
+/* We have 2 fonts in the Sigma file but you only used one. */
 h1,
 h2,
 h3{
@@ -26,7 +27,7 @@ p{
 }
 
 /* ****HEADER**** */
-
+/* Beautiful work on using CSS Grid and flex box together! */
 .header{
     grid-column: 1/-1;
     display: flex;
@@ -57,7 +58,7 @@ p{
 }
 
 /* ****Hamburger Menu**** */
-
+/* Good job displaying the hamburger menu icon on mobile devices. However, the hamburger menu is not functional. */
 .hamburger{
     position: relative;
     display: block;
@@ -215,6 +216,8 @@ padding: 30px;
     padding: 30px 0px;
 }
 
+/* Grid template areas haven’t been used to display items at different positions in different viewports.
+This is a requirement in the rubric */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
